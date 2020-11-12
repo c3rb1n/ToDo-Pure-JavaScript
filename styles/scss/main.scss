@@ -1,0 +1,58 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+body {
+	background-color: $mainBgColor;
+	font-size: 12px;
+	margin: 0;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.toDo {
+	min-width: 400px;
+	min-height: 400px;
+	&__form, &__tasks {
+		max-width: 330px;
+		margin: 0 auto;
+	}
+	&__form, &__task {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__form {
+		margin-top: 50px;
+	}
+	&__input {
+		outline: none;
+		padding: 5px 8px;
+		border: 2px solid $mainColor;
+		border-radius: $mainBorderRadius;
+		&:focus {
+			transition: 0.3s;
+			box-shadow: 0 0 10px $addButtonColor;
+			border-color: $addButtonColor;
+		}
+	}
+	&__add {
+		@include btn-style($addButtonColor, $addButtonHoverColor, $mainPaddings, $mainBorderRadius);
+	}
+	&__tasks {
+		margin-top: 20px;
+	}
+	&__task {
+		background-color: $taskBgColor;
+		padding: $mainPaddings;
+		border-radius: $mainBorderRadius;
+		margin-bottom: 10px;
+	}
+	&__remove {
+		@include btn-style($removeButtonColor, $removeButtonHoverColor, $mainPaddings, $mainBorderRadius);
+	}
+}

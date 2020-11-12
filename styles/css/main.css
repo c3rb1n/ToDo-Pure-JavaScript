@@ -1,0 +1,75 @@
+body {
+  background-color: #7ECBFA;
+  font-size: 12px;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.toDo {
+  min-width: 400px;
+  min-height: 400px;
+}
+.toDo__form, .toDo__tasks {
+  max-width: 330px;
+  margin: 0 auto;
+}
+.toDo__form, .toDo__task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toDo__form {
+  margin-top: 50px;
+}
+.toDo__input {
+  outline: none;
+  padding: 5px 8px;
+  border: 2px solid #FFFFFF;
+  border-radius: 3px;
+}
+.toDo__input:focus {
+  transition: 0.3s;
+  box-shadow: 0 0 10px #2369F6;
+  border-color: #2369F6;
+}
+.toDo__add {
+  background-color: #2369F6;
+  color: #FFFFFF;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 3px;
+}
+.toDo__add:hover {
+  transition: 0.3s;
+  background-color: rgba(35, 105, 246, 0.7);
+}
+.toDo__tasks {
+  margin-top: 20px;
+}
+.toDo__task {
+  background-color: #BEE5FD;
+  padding: 7px 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.toDo__remove {
+  background-color: #EA0000;
+  color: #FFFFFF;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 3px;
+}
+.toDo__remove:hover {
+  transition: 0.3s;
+  background-color: #D11507;
+}

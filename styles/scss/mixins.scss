@@ -1,0 +1,15 @@
+@import "variables.scss";
+
+@mixin btn-style ($bgColor, $hoverColor, $paddings, $borderRadius) {
+	background-color: $bgColor;
+	color: $mainColor;
+	outline: none;
+	cursor: pointer;
+	padding: $paddings;
+	border: none;
+	border-radius: $borderRadius;
+	&:hover {
+		transition: 0.3s;
+		background-color: $hoverColor;
+	}
+}
